@@ -1,12 +1,26 @@
+// Dépendances
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// CSS
+import './index.css';
+
+// Routing Composants
+import Routes from './Routes/Routes';
+
+// Redux
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { themeReducer } from './Store/Reducers/themeReducers';
+
+const store = createStore( themeReducer );
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={ store } >
+      <Routes />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

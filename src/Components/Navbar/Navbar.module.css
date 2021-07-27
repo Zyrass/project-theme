@@ -1,0 +1,9 @@
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 54px;
+  background-color: #252525;
+  border-bottom: 2px solid #feff99;
+  box-shadow: 0 2px 4px #252525;
+}
