@@ -8,7 +8,7 @@ function Routes() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" render={ () => <App /> } />
+        <Route exact path="/" component={ App } />
         <Redirect to="/" />
       </Switch>
     </Router>
