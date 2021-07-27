@@ -16,7 +16,7 @@ const GlobalStyled = createGlobalStyle`
   }
 `;
 const StyledP = styled.p`
-  max-width: 600px;
+  max-width: 900px;
   margin: 20px auto;
   padding: 25px;
   color: ${(props:any) => props.theme.primary };
