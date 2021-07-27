@@ -20,7 +20,6 @@ function Navbar() {
     <nav className={ Classes.navbar__container }>
       <StyledA 
         href="/"
-        target="_blank"
         rel="noopener noreferrer"
       >&lt; Project Theme &gt;</StyledA>
       <ThemeSelector />
